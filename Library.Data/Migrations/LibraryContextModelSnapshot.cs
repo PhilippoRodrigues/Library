@@ -217,15 +217,15 @@ namespace Library.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "0db1fc3e-3581-4f21-8f50-a6ab51681138",
-                            ConcurrencyStamp = "75e957ff-efc1-41e2-8e0d-9fedfb05de99",
+                            Id = "ad09036e-fd2b-4bb1-8b58-fb315a26d5b3",
+                            ConcurrencyStamp = "0b41d7a2-d26a-4c07-94fa-55fdb01157ab",
                             Name = "Visitor",
                             NormalizedName = "VISITOR"
                         },
                         new
                         {
-                            Id = "a02189fd-a9ed-4048-bd59-97fecadc3c15",
-                            ConcurrencyStamp = "e97500fe-7858-4913-a9f4-5691ab9e0d7b",
+                            Id = "a51de0f9-de93-4ac7-99b1-50a33143651f",
+                            ConcurrencyStamp = "6221fc1f-3b2c-43f8-97a2-cd72ed263985",
                             Name = "Administrator",
                             NormalizedName = "ADMINISTRATOR"
                         });
@@ -338,13 +338,13 @@ namespace Library.Data.Migrations
             modelBuilder.Entity("Library.Domain.Models.Library.AuthorBook", b =>
                 {
                     b.HasOne("Library.Domain.Models.Library.Author", "Author")
-                        .WithMany("AuthorBook")
+                        .WithMany("AuthorBooks")
                         .HasForeignKey("AuthorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("Library.Domain.Models.Library.Book", "Book")
-                        .WithMany("AuthorBook")
+                        .WithMany("AuthorBooks")
                         .HasForeignKey("BookId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();

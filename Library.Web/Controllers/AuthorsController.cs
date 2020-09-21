@@ -2,154 +2,101 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
+using Library.Domain.Interfaces;
+using Library.Web.Models.ViewModels.AuthorsViewModel;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using Library.Data;
-using Library.Domain.Models.Library;
-using Microsoft.AspNetCore.Authorization;
+using SQLitePCL;
 
 namespace Library.Web.Controllers
 {
     public class AuthorsController : Controller
     {
-        private readonly LibraryContext _context;
+        private readonly IUnitOfWork _unitOfWork;
+        private IMapper _mapper;
 
-        public AuthorsController(LibraryContext context)
+        public AuthorsController(IUnitOfWork unitOfWork, IMapper mapper)
         {
-            _context = context;
+            _unitOfWork = unitOfWork;
+            _mapper = mapper;
         }
 
-        // GET: Authors
-        [Authorize]
-        public async Task<IActionResult> Index()
+        // GET: AuthorsController
+        public ActionResult Index()
         {
-            return View(await _context.Authors.ToListAsync());
+            var model = _unitOfWork.Author.GetAll();
+            var vm = _mapper.Map<List<AuthorViewModel>>(model);
+            return View(vm);
         }
 
-        // GET: Authors/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var author = await _context.Authors
-                .FirstOrDefaultAsync(m => m.AuthorId == id);
-            if (author == null)
-            {
-                return NotFound();
-            }
-
-            return View(author);
-        }
-
-        // GET: Authors/Create
-        public IActionResult Create()
+        // GET: AuthorsController/Details/5
+        public ActionResult Details(int id)
         {
             return View();
         }
 
-        // POST: Authors/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // GET: AuthorsController/Create
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        // POST: AuthorsController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("AuthorId,FirstName,LastName,Email,BirthDate")] Author author)
+        public ActionResult Create(IFormCollection collection)
         {
-            if (ModelState.IsValid)
+            try
             {
-                _context.Add(author);
-                await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(author);
+            catch
+            {
+                return View();
+            }
         }
 
-        // GET: Authors/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        // GET: AuthorsController/Edit/5
+        public ActionResult Edit(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var author = await _context.Authors.FindAsync(id);
-            if (author == null)
-            {
-                return NotFound();
-            }
-            return View(author);
+            return View();
         }
 
-        // POST: Authors/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
+        // POST: AuthorsController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("AuthorId,FirstName,LastName,Email,BirthDate")] Author author)
+        public ActionResult Edit(int id, IFormCollection collection)
         {
-            if (id != author.AuthorId)
+            try
             {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Update(author);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!AuthorExists(author.AuthorId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
                 return RedirectToAction(nameof(Index));
             }
-            return View(author);
+            catch
+            {
+                return View();
+            }
         }
 
-        // GET: Authors/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        // GET: AuthorsController/Delete/5
+        public ActionResult Delete(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var author = await _context.Authors
-                .FirstOrDefaultAsync(m => m.AuthorId == id);
-            if (author == null)
-            {
-                return NotFound();
-            }
-
-            return View(author);
+            return View();
         }
 
-        // POST: Authors/Delete/5
-        [HttpPost, ActionName("Delete")]
+        // POST: AuthorsController/Delete/5
+        [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public ActionResult Delete(int id, IFormCollection collection)
         {
-            var author = await _context.Authors.FindAsync(id);
-            _context.Authors.Remove(author);
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
-
-        private bool AuthorExists(int id)
-        {
-            return _context.Authors.Any(e => e.AuthorId == id);
+            try
+            {
+                return RedirectToAction(nameof(Index));
+            }
+            catch
+            {
+                return View();
+            }
         }
     }
 }

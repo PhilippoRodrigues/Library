@@ -22,4 +22,8 @@
     <ProjectReference Include="..\Library.Domain\Library.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Models\ViewModels\BooksViewModel\" />
+  </ItemGroup>
+
 </Project>

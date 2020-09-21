@@ -11,6 +11,6 @@ namespace Library.Domain.Models.Library
         public string Title { get; set; }
         public string Year { get; set; }
 
-        public IList<AuthorBook> AuthorBook { get; set; }
+        public List<AuthorBook> AuthorBooks { get; set; }
     }
 }

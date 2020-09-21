@@ -183,13 +183,4 @@ C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Web\obj\D
 C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Web\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Web\obj\Debug\netcoreapp3.1\Library.Web.csproj.CoreCompileInputs.cache
 C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Web\obj\Debug\netcoreapp3.1\Library.Web.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Web\obj\Debug\netcoreapp3.1\Razor\Views\Books\Create.cshtml.g.cs
-C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Web\obj\Debug\netcoreapp3.1\Razor\Views\Books\Delete.cshtml.g.cs
-C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Web\obj\Debug\netcoreapp3.1\Razor\Views\Books\Details.cshtml.g.cs
-C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Web\obj\Debug\netcoreapp3.1\Razor\Views\Books\Edit.cshtml.g.cs
-C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Web\obj\Debug\netcoreapp3.1\Razor\Views\Books\Index.cshtml.g.cs
-C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Web\obj\Debug\netcoreapp3.1\Razor\Views\Authors\Create.cshtml.g.cs
-C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Web\obj\Debug\netcoreapp3.1\Razor\Views\Authors\Delete.cshtml.g.cs
-C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Web\obj\Debug\netcoreapp3.1\Razor\Views\Authors\Details.cshtml.g.cs
-C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Web\obj\Debug\netcoreapp3.1\Razor\Views\Authors\Edit.cshtml.g.cs
 C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Web\obj\Debug\netcoreapp3.1\Razor\Views\Authors\Index.cshtml.g.cs

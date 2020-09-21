@@ -48,12 +48,12 @@ namespace Library.Data
 
             modelBuilder.Entity<AuthorBook>()
                 .HasOne(t => t.Author)
-                .WithMany(t => t.AuthorBook)
+                .WithMany(t => t.AuthorBooks)
                 .HasForeignKey(t => t.AuthorId);
 
             modelBuilder.Entity<AuthorBook>()
                 .HasOne(t => t.Book)
-                .WithMany(t => t.AuthorBook)
+                .WithMany(t => t.AuthorBooks)
                 .HasForeignKey(t => t.BookId);
         }
     }

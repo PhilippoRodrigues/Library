@@ -12,6 +12,6 @@ namespace Library.Domain.Models.Library
         public string Email { get; set; }
         public string BirthDate { get; set; }
 
-        public IList<AuthorBook> AuthorBook { get; set; } //collection navigation property
+        public List<AuthorBook> AuthorBooks { get; set; }
     }
 }

@@ -5,8 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
 using Library.Data;
+using Library.Data.Repositories;
+using Library.Domain.Interfaces;
 using Library.Domain.Models.Identity;
 using Library.Web.Factory;
+using Library.Web.Helpers;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -34,6 +37,9 @@ namespace Library.Web
         {
             services.AddDbContext<LibraryContext>(opts =>
                opts.UseSqlServer(Configuration.GetConnectionString("DatabaseConnection")));
+
+            services.AddTransient<IUnitOfWork, UnitOfWorkRepository>();
+
             services.AddIdentity<User, IdentityRole>(opt =>
             {
                 opt.Password.RequiredLength = 7;
@@ -47,8 +53,17 @@ namespace Library.Web
             services.AddScoped<IUserClaimsPrincipalFactory<User>, CustomClaimsFactory>();
 
             services.AddAutoMapper(typeof(Startup));
-
+            
             services.ConfigureApplicationCookie(o => o.LoginPath = "/Authentication/Login");
+
+            var config = new AutoMapper.MapperConfiguration(cfg =>
+            {
+                cfg.AddProfile(new LibraryMappings());
+            });
+
+            var mapper = config.CreateMapper();
+
+            services.AddSingleton(mapper);
 
             services.AddControllersWithViews();
         }
