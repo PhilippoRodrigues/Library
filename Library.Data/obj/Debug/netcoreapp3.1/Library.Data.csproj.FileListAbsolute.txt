@@ -1,0 +1,15 @@
+C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Data\bin\Debug\netcoreapp3.1\Library.Domain.dll
+C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Data\obj\Debug\netcoreapp3.1\Library.Data.csprojAssemblyReference.cache
+C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Data\obj\Debug\netcoreapp3.1\Library.Data.AssemblyInfoInputs.cache
+C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Data\obj\Debug\netcoreapp3.1\Library.Data.AssemblyInfo.cs
+C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Data\bin\Debug\netcoreapp3.1\Library.Data.deps.json
+C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Data\bin\Debug\netcoreapp3.1\Library.Data.runtimeconfig.json
+C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Data\bin\Debug\netcoreapp3.1\Library.Data.runtimeconfig.dev.json
+C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Data\bin\Debug\netcoreapp3.1\Library.Data.dll
+C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Data\bin\Debug\netcoreapp3.1\Library.Data.pdb
+C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Data\bin\Debug\netcoreapp3.1\Library.Domain.pdb
+C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Data\obj\Debug\netcoreapp3.1\Library.Data.csproj.CopyComplete
+C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Data\obj\Debug\netcoreapp3.1\Library.Data.dll
+C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Data\obj\Debug\netcoreapp3.1\Library.Data.pdb
+C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Data\obj\Debug\netcoreapp3.1\Library.Data.genruntimeconfig.cache
+C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Data\obj\Debug\netcoreapp3.1\Library.Data.csproj.CoreCompileInputs.cache

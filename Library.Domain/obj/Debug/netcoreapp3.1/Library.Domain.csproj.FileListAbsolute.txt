@@ -1,0 +1,9 @@
+C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Domain\bin\Debug\netcoreapp3.1\Library.Domain.deps.json
+C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Domain\bin\Debug\netcoreapp3.1\Library.Domain.dll
+C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Domain\obj\Debug\netcoreapp3.1\Library.Domain.csprojAssemblyReference.cache
+C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Domain\obj\Debug\netcoreapp3.1\Library.Domain.AssemblyInfoInputs.cache
+C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Domain\obj\Debug\netcoreapp3.1\Library.Domain.AssemblyInfo.cs
+C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Domain\bin\Debug\netcoreapp3.1\Library.Domain.pdb
+C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Domain\obj\Debug\netcoreapp3.1\Library.Domain.dll
+C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Domain\obj\Debug\netcoreapp3.1\Library.Domain.pdb
+C:\Users\philippo.rodrigues\Documents\Workspace_CSharp\Library\Library.Domain\obj\Debug\netcoreapp3.1\Library.Domain.csproj.CoreCompileInputs.cache
