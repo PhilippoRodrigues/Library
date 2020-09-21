@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NlcCeuTzKY8ohpfTqPIYmE+1hM5woo11PBtWdhL6amY2HCzoHXdJEKsw1u7QH/rB+B4XwfVHoB3RH/yz0FNStw==",
+  "dgSpecHash": "PMWBoxbBk83c2tI0vw43EmbcRMU9aVx5J9+bKgQ7cOJcXS33U0aDzFfSfs55We+25yprg3DHsiX0LB6UMx4eow==",
   "success": true,
   "projectFilePath": "C:\\Users\\philippo.rodrigues\\Documents\\Workspace_CSharp\\Library\\Library.Web\\Library.Web.csproj",
   "expectedPackageFiles": [
@@ -41,10 +41,12 @@
     "C:\\Users\\philippo.rodrigues\\.nuget\\packages\\microsoft.entityframeworkcore\\3.1.8\\microsoft.entityframeworkcore.3.1.8.nupkg.sha512",
     "C:\\Users\\philippo.rodrigues\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\3.1.8\\microsoft.entityframeworkcore.abstractions.3.1.8.nupkg.sha512",
     "C:\\Users\\philippo.rodrigues\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\3.1.8\\microsoft.entityframeworkcore.analyzers.3.1.8.nupkg.sha512",
+    "C:\\Users\\philippo.rodrigues\\.nuget\\packages\\microsoft.entityframeworkcore.design\\3.1.8\\microsoft.entityframeworkcore.design.3.1.8.nupkg.sha512",
     "C:\\Users\\philippo.rodrigues\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\3.1.8\\microsoft.entityframeworkcore.relational.3.1.8.nupkg.sha512",
     "C:\\Users\\philippo.rodrigues\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\3.1.8\\microsoft.entityframeworkcore.sqlite.3.1.8.nupkg.sha512",
     "C:\\Users\\philippo.rodrigues\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\3.1.8\\microsoft.entityframeworkcore.sqlite.core.3.1.8.nupkg.sha512",
     "C:\\Users\\philippo.rodrigues\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\3.1.8\\microsoft.entityframeworkcore.sqlserver.3.1.8.nupkg.sha512",
+    "C:\\Users\\philippo.rodrigues\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\3.1.8\\microsoft.entityframeworkcore.tools.3.1.8.nupkg.sha512",
     "C:\\Users\\philippo.rodrigues\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.8\\microsoft.extensions.caching.abstractions.3.1.8.nupkg.sha512",
     "C:\\Users\\philippo.rodrigues\\.nuget\\packages\\microsoft.extensions.caching.memory\\3.1.8\\microsoft.extensions.caching.memory.3.1.8.nupkg.sha512",
     "C:\\Users\\philippo.rodrigues\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.8\\microsoft.extensions.configuration.3.1.8.nupkg.sha512",

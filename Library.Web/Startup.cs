@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Library.Data;
 using Library.Domain.Models.Identity;
+using Library.Web.Factory;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -31,14 +32,23 @@ namespace Library.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddCors();
-
             services.AddDbContext<LibraryContext>(opts =>
                opts.UseSqlServer(Configuration.GetConnectionString("DatabaseConnection")));
-            services.AddIdentity<User, IdentityRole>()
-                .AddEntityFrameworkStores<LibraryContext>();
+            services.AddIdentity<User, IdentityRole>(opt =>
+            {
+                opt.Password.RequiredLength = 7;
+                opt.Password.RequireDigit = false;
+                opt.Password.RequireUppercase = false;
+                //It's possible to Email not be the only one required. Just remove the line below
+                opt.User.RequireUniqueEmail = true;
+            })
+            .AddEntityFrameworkStores<LibraryContext>();
+
+            services.AddScoped<IUserClaimsPrincipalFactory<User>, CustomClaimsFactory>();
 
             services.AddAutoMapper(typeof(Startup));
+
+            services.ConfigureApplicationCookie(o => o.LoginPath = "/Authentication/Login");
 
             services.AddControllersWithViews();
         }

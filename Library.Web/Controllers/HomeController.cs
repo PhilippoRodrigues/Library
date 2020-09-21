@@ -23,6 +23,7 @@ namespace Library.Web.Controllers
             _context = context;
         }
 
+        [Authorize]
         public async Task<IActionResult> Employees()
         {
             var employees = await _context.Employees.ToListAsync();
@@ -30,11 +31,6 @@ namespace Library.Web.Controllers
         }
 
         public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult Privacy()
         {
             return View();
         }
